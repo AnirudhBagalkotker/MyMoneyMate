@@ -9,10 +9,15 @@ MyMoneyMate is a **Java-based personal finance management application** built wi
 
 ## **🚀 Features**
 ✅ **Expense Tracking:** Record daily transactions and categorize expenses.  
+
 ✅ **Budget Planning:** Set monthly budgets and get alerts on overspending.  
+
 ✅ **Charts & Reports:** Visualize income and expenses with **JFreeChart**.  
+
 ✅ **User-Friendly UI:** Built with **Java Swing** and SystemLookAndFeel.  
+
 ✅ **SQLite Database:** Lightweight, fast, and efficient local storage.  
+
 ✅ **Multi-User Support** – Add multiple profiles for shared finances  
 
 ---
