@@ -29,4 +29,4 @@ Thumbs.db       # Windows
 /docs/
 
 # Ignore Database files
-*.db
+database/mymoneymate.db
