@@ -1,0 +1,30 @@
+# Ignore Gradle project-specific cache directory
+.gradle/
+
+# Ignore Gradle build output directories
+build/
+bin/
+gradle/
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore logs
+*.log
+
+# Ignore operating system files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Ignore Java class files
+*.class
+
+# Ignore JAR files
+*.jar
+*.war
+*.ear
+
+# Ignore generated files like the Javadoc output
+/docs/

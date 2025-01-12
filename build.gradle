@@ -1,0 +1,64 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.mymoneymate'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // SQLite JDBC Driver
+    implementation 'org.xerial:sqlite-jdbc:3.44.1.0'
+    
+    // JUnit for testing
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.1'
+    
+    // Add logging
+    implementation 'ch.qos.logback:logback-classic:1.4.14'
+
+    // Add Spring Security Crypto
+    implementation 'org.springframework.security:spring-security-crypto:6.1.2'
+
+    // Add JFreeChart
+    implementation 'org.jfree:jfreechart:1.5.3'
+
+    // Add JCalender
+    implementation 'com.toedter:jcalendar:1.4'
+
+}
+
+application {
+    mainClass = 'com.mymoneymate.Main'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+// Create fat JAR with dependencies
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.mymoneymate.Main'
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
