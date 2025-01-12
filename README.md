@@ -65,8 +65,11 @@ java -jar build/libs/mymoneymate-1.0-SNAPSHOT.jar
 
 ## **📚 Roadmap**
 🔹 **Data Security** - Hash using **Spring Security Crypto** for encrypted financial data. 
+
 🔹 **Reminders & Alerts:** Get notified about upcoming bills and savings goals. 
+
 🔹 **Cloud Sync** – Backup data to cloud storage  
+
 🔹 **AI-Based Expense Predictions** – Smart analytics for better financial planning  
 
 ---
