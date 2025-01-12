@@ -26,7 +26,6 @@ MyMoneyMate is a **Java-based personal finance management application** built wi
 - **Language:** Java (JDK 17)  
 - **UI Framework:** Swing (SystemLookAndFeel)  
 - **Database:** SQLite  
-- **Logging:** Logback  
 - **Visualization:** JFreeChart  
 
 ---
