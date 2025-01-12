@@ -27,3 +27,6 @@ Thumbs.db       # Windows
 
 # Ignore generated files like the Javadoc output
 /docs/
+
+# Ignore Database files
+*.db
