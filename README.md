@@ -22,7 +22,9 @@ MyMoneyMate is a **Java-based personal finance management application** built wi
 
 ✅ **SQLite Database:** Lightweight, fast, and efficient local storage.
 
-✅ **Multi-User Support** – Add multiple profiles for shared finances
+✅ **Multi-User Support** – Add multiple profiles for shared finances.
+
+✅ **Login-Signup System** – Protect your account with a Login id and Password.
 
 ---
 
